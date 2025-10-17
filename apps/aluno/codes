@@ -1,0 +1,15 @@
+.\venv\Scripts\activate.ps1
+django-admin startproject setup .
+pip install django
+django-admin help
+python -m venv venv
+pip freeze > requirements.txt
+python manage.py runserver
+pip install python-dotenv
+git init
+git add .
+git commit -m "primeiro commit"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git remote add origin https://github.com/Mariaeduardabonfim/codes.duda.git
+git push -u origin master
